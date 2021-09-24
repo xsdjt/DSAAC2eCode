@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 #define PrintDigit( Ch )      ( putchar( ( Ch ) + '0' ) )
 
@@ -21,14 +22,17 @@ double RoundUp(double N, int DecPlaces)
 	return (N+AmountToAdd);
 }
 
-int IntPart(double N)
-{
-	return (int)(N);
-}
-
 double DecPart(double N)
 {
-	return (N-(int)N);
+	double IntPart = 0;
+	return modf(N, &IntPart);
+}
+
+double IntPart(double N)
+{
+	double IntPart = 0;
+	modf(N, &IntPart);
+	return IntPart;
 }
 
 void PrintFractionPart(double FractionPart, int DecPlaces)
@@ -68,7 +72,7 @@ int main(int argc, char *argv[] )
 	printf("int:\t%ld\nchar:\t%ld\nfloat:\t%ld\ndouble:\t%ld\n", sizeof(int), sizeof(char), sizeof(float), sizeof(double));
 	PrintOut( 1369 );
 	putchar( '\n' );
-	printf("%d\n", IntPart(343.2344));
+	printf("%lf\n", IntPart(343.2344));
 	printf("%lf\n", DecPart(343.2344));
 	PrintReal(-321.654654164, 7);
 	putchar('\n');
