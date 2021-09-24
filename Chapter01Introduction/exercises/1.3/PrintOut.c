@@ -70,7 +70,7 @@ int main(int argc, char *argv[] )
 	putchar( '\n' );
 	printf("%d\n", IntPart(343.2344));
 	printf("%lf\n", DecPart(343.2344));
-	PrintReal(321.654654164, 5);
+	PrintReal(-321.654654164, 7);
 	putchar('\n');
 	return 0;
 }
