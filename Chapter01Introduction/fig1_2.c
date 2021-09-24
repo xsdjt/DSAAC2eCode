@@ -11,7 +11,7 @@
         }
 /* END */
 
-main( )
+int main(int argc, char *argv[])
 {
     printf( "F(5) = %d\n", F( 5 ) );
     return 0;

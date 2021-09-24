@@ -12,7 +12,7 @@
         }
 /* END */
 
-main( )
+int main(int argc, char *argv[] )
 {
     PrintOut( 1369 );
     putchar( '\n' );

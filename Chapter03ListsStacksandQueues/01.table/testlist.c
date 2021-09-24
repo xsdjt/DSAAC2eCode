@@ -19,7 +19,7 @@ PrintList( const List L )
     }
 }
 
-main( )
+int main(int argc, char *argv[])
 {
     List L;
     Position P;
