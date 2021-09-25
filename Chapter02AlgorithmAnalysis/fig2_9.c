@@ -4,8 +4,7 @@ typedef int ElementType;
 #define NotFound (-1)
 
 /* START: fig2_9.txt */
-        int
-        BinarySearch( const ElementType A[ ], ElementType X, int N )
+        int BinarySearch( const ElementType A[ ], ElementType X, int N )
         {
             int Low, Mid, High;
 
@@ -25,7 +24,7 @@ typedef int ElementType;
         }
 /* END */
 
-main( )
+int main(int argc, char *argv[])
 {
     static int A[ ] = { 1, 3, 5, 7, 9, 13, 15 };
     const int SizeofA = sizeof( A ) / sizeof( A[ 0 ] );

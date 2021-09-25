@@ -17,7 +17,7 @@
         }
 /* END */
 
-main( )
+int main(int argc, char *argv[])
 {
     printf( "2^21 = %ld\n", Pow( 2, 21 ) );
     return 0;

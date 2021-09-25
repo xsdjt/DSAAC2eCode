@@ -16,7 +16,7 @@
         }
 /* END */
 
-main( )
+int main(int argc, char *argv[])
 {
     printf( "Gcd( 45, 35 ) = %d\n", Gcd( 45, 35 ) );
     printf( "Gcd( 1989, 1590 ) = %d\n", Gcd( 1989, 1590 ) );
