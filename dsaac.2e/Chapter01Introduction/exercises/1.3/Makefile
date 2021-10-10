@@ -1,9 +1,11 @@
 .PHONY: clean
 
-all: app
 
-app: PrintOut.c
+target=PrintOut
+src=PrintOut.c
+
+$(target): $(src)
 	gcc $^ -o $@
 
 clean:
-	rm app
+	rm $(target)
