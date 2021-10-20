@@ -18,11 +18,11 @@ main:
 	.size	main, .-main
 	.globl	array
 	.data
-	.align 4
+	.align 8
 	.type	array, @object
 	.size	array, 8
 array:
 	.long	1
 	.long	2
-	.ident	"GCC: (Ubuntu 4.8.1-2ubuntu1~12.04) 4.8.1"
+	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
