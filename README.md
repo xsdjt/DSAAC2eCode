@@ -7,6 +7,6 @@ csapp.3e是《深入理解计算机系统》（第3版）的源码[下载地址:
 
 dsaac2.e是《数据结构与算法分析——C语言描述》(第2版)的源码,目录内含有英文原版pdf。
 
-lddd代码下载地址： https://box.lenovo.com/l/S57NRz
+《Linux设备驱动开发》代码下载地址： https://box.lenovo.com/l/S57NRz
 
 
